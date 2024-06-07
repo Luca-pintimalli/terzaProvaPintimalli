@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "email": "luca.pintimalli99@gmail.com",
+      "password": "$2a$10$U6z58XkRdXU2UwPFNiCPheqVOHKojyz1bnARJQAYiLZh/gqR9xBi2",
+      "name": "ANTONELLA",
+      "id": 1
+    },
+    {
+      "email": "luca.pintimalli99@lolo.com",
+      "password": "$2a$10$aRSElCkRPERpc/YdU3FakO.6CCKqb.zgpkbYswxNwnysH1BBQwi7S",
+      "name": "joshua",
+      "id": 2
+    },
+    {
+      "email": "pappagallo07@live.com",
+      "password": "$2a$10$XGA5gR3B15IhncZaafWohOtSXuLUumh03XYqsf/kVnD8taSxVDgpi",
+      "name": "giorgio",
+      "id": 3
+    },
+    {
+      "email": "valerio@live.it",
+      "password": "$2a$10$qLAh3kxhyD62XSz1qJQwousr9rTqDWOSjTTnTJB0PDaKnHHGlW8nK",
+      "name": "valerio",
+      "id": 4
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "titolo": "acciughe",
+      "descrizione": "un film eccccezionale"
+    }
+  ],
+  "movies-favorite": [
+    {
+      "pizza": {
+        "id": 1,
+        "titolo": "Tartagughe",
+        "descrizione": "un film eccccezionale"
+      },
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "pizza": {
+        "id": 1,
+        "titolo": "Tartagughe",
+        "descrizione": "un film eccccezionale"
+      },
+      "id": 2,
+      "userId": 4
+    }
+  ]
+}
