@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+
 import { MovieService } from '../../Service/movie.service';
 import { MoviesFavoriteInt } from '../../Models/movies-favorite';
 import { MovieInt } from '../../Models/movie-int';
 import { MoviesFavoriteService } from '../../Service/movies-favorite.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-movies',
@@ -11,29 +12,33 @@ import { MoviesFavoriteService } from '../../Service/movies-favorite.service';
 })
 export class MoviesComponent {
 
-  movie:MovieInt[]=[]
-  moviePref:MoviesFavoriteInt[]=[]
+  movie: MovieInt[] = []
+  moviePref: MoviesFavoriteInt[] = []
 
   constructor(
-    private movieSvc:MovieService,
-    private moviePrefSvc:MoviesFavoriteService){}
+    private movieSvc: MovieService,
+    private moviePrefSvc: MoviesFavoriteService) { }
 
 
-    ngOnInit(){
-      this.movieSvc.getAll().subscribe(movie => {
-        this.movie = movie
-        this.moviePrefSvc.getAll().subscribe(moviePref => {
-          this.moviePref = moviePref
-        } )
+  ngOnInit() {
+    this.movieSvc.getAll().subscribe(movie => {
+      this.movie = movie
+      this.moviePrefSvc.getAll().subscribe(moviePref => {
+        this.moviePref = moviePref
       })
-    }
+    })
+  }
 
 
-    toggleFavorite(movie:MovieInt){
-      const obj:Partial<MoviesFavoriteInt> = {
-        userId:1,
-        movie:movie
-      }
+
+
+
+  toggleFavorite(movie: MovieInt) {
+    const obj: Partial<MoviesFavoriteInt> = {
+      userId: 1,
+      movie: movie
     }
+  }
+
 
 }

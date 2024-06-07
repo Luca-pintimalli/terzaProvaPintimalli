@@ -136,8 +136,8 @@
     {
       "pizza": {
         "id": 1,
-        "titolo": "Tartagughe",
-        "descrizione": "un film eccccezionale"
+        "titolo": "Inception",
+        "descrizione": "Un thriller di fantascienza che esplora il mondo dei sogni e della realtà."
       },
       "id": 1,
       "userId": 1
@@ -145,11 +145,11 @@
     {
       "pizza": {
         "id": 1,
-        "titolo": "Tartagughe",
-        "descrizione": "un film eccccezionale"
+        "titolo": "Inception",
+        "descrizione": "Un thriller di fantascienza che esplora il mondo dei sogni e della realtà."
       },
-      "id": 2,
-      "userId": 4
+      "id": 1,
+      "userId": 1
     }
   ]
 }
