@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { MovieService } from '../../movie.service';
+import { MovieService } from '../../Service/movie.service';
 import { MoviesFavoriteInt } from '../../Models/movies-favorite';
 import { MovieInt } from '../../Models/movie-int';
-import { MoviesFavoriteService } from '../../movies-favorite.service';
+import { MoviesFavoriteService } from '../../Service/movies-favorite.service';
 
 @Component({
   selector: 'app-movies',
@@ -29,7 +29,7 @@ export class MoviesComponent {
     }
 
 
-    toogleFavorite(movie:MovieInt){
+    toggleFavorite(movie:MovieInt){
       const obj:Partial<MoviesFavoriteInt> = {
         userId:1,
         movie:movie

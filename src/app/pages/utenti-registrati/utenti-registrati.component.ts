@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UserInt } from '../../Models/user-int';
-import { AuthService } from '../../auth/SERVICE/auth.service';
+import { UserService } from '../../Service/user.service';
 
 @Component({
   selector: 'app-utenti-registrati',
@@ -12,11 +12,27 @@ export class UtentiRegistratiComponent {
 
 
 
-  user!:UserInt
+  user:UserInt [] = [];
 
 
 
-constructor(private authSvc:AuthService){}
+constructor(private userSvc:UserService){}
 
+
+
+ngOnInit(){
+  this.loadUsers()
+}
+
+
+loadUsers() {
+  this.userSvc.getUsers().subscribe(
+    (data: UserInt[]) => {
+      this.user = data;
+    })
+
+
+
+  }
 
 }

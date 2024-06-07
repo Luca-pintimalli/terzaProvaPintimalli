@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { MoviesFavoriteInt} from './Models/movies-favorite';
+import { MoviesFavoriteInt} from '../Models/movies-favorite';
 
 @Injectable({
   providedIn: 'root'

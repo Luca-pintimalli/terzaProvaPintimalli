@@ -1,1 +1,11 @@
-<p>utenti-registrati works!</p>
+<div class="row mt-5 p-4 mx-auto">
+    <h2>Utenti registrati</h2>
+    <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let user of user">
+        <div class="card me-auto mx-auto" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{user.name}}</h5>
+                <p class="card-text">{{user.email}}</p>
+            </div>
+        </div>
+    </div>
+</div>
