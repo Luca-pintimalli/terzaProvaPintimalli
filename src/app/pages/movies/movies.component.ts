@@ -31,7 +31,7 @@ export class MoviesComponent {
 
     toogleFavorite(movie:MovieInt){
       const obj:Partial<MoviesFavoriteInt> = {
-        userId:6,
+        userId:1,
         movie:movie
       }
     }

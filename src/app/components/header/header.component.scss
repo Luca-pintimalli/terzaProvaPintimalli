@@ -1,9 +1,20 @@
-.custom-hover-link:hover {
-    color: #da0101;
-    background-color: aqua;
-    border-radius: 50px; 
-  }
+.custom-a-title{
+  color: aqua;
+}
 
-.custom-hover-link{
-    border-radius: 50px;
+.custom-hover-link:hover {
+  color: black;
+  background-color: aqua;
+  border-radius: 50px; 
+}
+
+.custom-hover-link {
+  border-radius: 50px;
+}
+
+
+
+.custom-hover-a:hover{
+  color: black;
+
 }
