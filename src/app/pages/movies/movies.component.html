@@ -1,13 +1,15 @@
-<div class="row">
-    <div class="col  " *ngFor="let m of movie" >
+<div class="row mt-5">
+    <div class="col mt-5 me-auto  " *ngFor="let m of movie" >
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+           
             <div class="card-body">
               <h5 class="card-title">{{m.id}}</h5>
               <p class="card-text">{{m.titolo}}</p>
+              <p class="text-start" >{{m.descrizione}}</p>
+              <div class="d-flex justify-content-between" >              
+              <button (click)="toogleFavorite(m)" class="btn btn-primary" >Aggiungi a preferiti!</button>
               <button class="btn btn-primary" >elimina</button>
-              <button class="btn btn-primary" >modifica</button>
-              <button (click)="toogleFavorite(m)" class="btn btn-primary" >Pref</button>
+            </div>
             </div>
           </div>
     </div>

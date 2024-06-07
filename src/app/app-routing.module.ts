@@ -12,7 +12,9 @@ const routes: Routes = [{ path: '', loadChildren: () => import('./pages/home/hom
                         { path: 'dashboard', loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule),
                          canActivate:[AuthGuard],
                         canActivateChild:[AuthGuard] },
-                        { path: 'movies', loadChildren: () => import('./pages/movies/movies.module').then(m => m.MoviesModule) }];
+                        { path: 'movies', loadChildren: () => import('./pages/movies/movies.module').then(m => m.MoviesModule),
+                        canActivate:[AuthGuard],
+                        canActivateChild:[AuthGuard] }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

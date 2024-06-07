@@ -23,14 +23,114 @@
       "password": "$2a$10$qLAh3kxhyD62XSz1qJQwousr9rTqDWOSjTTnTJB0PDaKnHHGlW8nK",
       "name": "valerio",
       "id": 4
+    },
+    {
+      "email": "gigio@gigi.com",
+      "password": "$2a$10$JQ3x/otaCdalOPPxWtKveeQZ0MxjDOEwNY47nRqT4lt5tBWAxzGlG",
+      "name": "gigi",
+      "id": 5
+    },
+    {
+      "email": "giuly@giuly.com",
+      "password": "$2a$10$LkoNj6K5wuNfucpUZiMN6uA9.GhYm3fhr.f9bmAiOQcfqhFFKJUH6",
+      "name": "giulia",
+      "id": 6
+    },
+    {
+      "email": "marco@marco.it",
+      "password": "$2a$10$spEZnUmVB/OXY6dQA0XmNOxAC820kNn43FnRDR2rD7WgoAQ8Mi1pu",
+      "name": "marco",
+      "id": 7
+    },
+    {
+      "email": "vale@vale.it",
+      "password": "$2a$10$IeAE39HACRbEJC0vROA4hON9f5Xnp787cVPDXAzBTfUBojcqBnL56",
+      "name": "valerio",
+      "id": 8
+    },
+    {
+      "email": "anto@anto.it",
+      "password": "$2a$10$HaTUeoqlJ7bw1U1zU0Bw7.UOeEpE9c8HKZgdL78ZpOITJHMaaH/lO",
+      "name": "ANTONELLA",
+      "id": 9
     }
   ],
   "movies": [
     {
       "id": 1,
-      "titolo": "acciughe",
-      "descrizione": "un film eccccezionale"
-    }
+      "titolo": "Inception",
+      "descrizione": "Un thriller di fantascienza che esplora il mondo dei sogni e della realtà."
+    },
+    {
+        "id": 2,
+        "titolo": "The Shawshank Redemption",
+        "descrizione": "Un dramma carcerario che celebra la speranza e l'amicizia."
+      },
+      {
+        "id": 3,
+        "titolo": "Pulp Fiction",
+        "descrizione": "Un film gangster che mescola violenza, umorismo nero e dialoghi iconici."
+      },
+      {
+        "id": 4,
+        "titolo": "The Godfather",
+        "descrizione": "Un epico dramma criminale che segue la famiglia Corleone nel mondo della mafia."
+      },
+      {
+        "id": 5,
+        "titolo": "Forrest Gump",
+        "descrizione": "Un commovente racconto che segue le avventure di un uomo con un'intelligenza al di sotto della media."
+      },
+      {
+        "id": 6,
+        "titolo": "The Dark Knight",
+        "descrizione": "un film eccccezionale"
+      },
+      {
+        "id": 7,
+        "titolo": "Schindler's List",
+        "descrizione": "Un dramma storico che racconta la storia vera di un uomo che salva ebrei durante l'Olocausto."
+      },
+      {
+        "id": 8,
+        "titolo": "The Matrix",
+        "descrizione": "Un film di fantascienza che esplora concetti di realtà simulata e ribellione contro il sistema."
+      },
+      {
+        "id": 9,
+        "titolo": "Fight Club",
+        "descrizione": "un film eccccezionale"
+      },
+      {
+        "id": 10,
+        "titolo": "The Silence of the Lambs",
+        "descrizione": "Un thriller psicologico che segue un giovane agente dell'FBI mentre cerca l'aiuto di un brillante ma pericoloso serial killer."
+      },
+      {
+        "id": 11,
+        "titolo": "The Lord of the Rings: The Fellowship of the Ring" ,
+        "descrizione": "Un epico fantasy che segue un gruppo di eroi mentre intraprendono un viaggio per distruggere un potente anello"
+      },
+      {
+        "id": 12,
+        "titolo": "Inglourious Basterds",
+        "descrizione": "Un film di guerra e vendetta ambientato nella Francia occupata dai nazisti durante la Seconda Guerra Mondiale."
+      },
+      {
+        "id": 13,
+        "titolo": "The Green Mile",
+        "descrizione": "Un dramma carcerario basato sul romanzo di Stephen King che segue gli eventi straordinari in una prigione di massima sicurezza."
+      },
+      {
+        "id": 14,
+        "titolo":"Interstellar",
+        "descrizione": "Un film di fantascienza che esplora i temi del tempo, dello spazio e dell'amore mentre l'umanità cerca una nuova casa nel cosmo."
+      },
+      {
+        "id": 15,
+        "titolo": "Goodfellas",
+        "descrizione": "Un dramma criminale che segue la vita di un gangster italoamericano e il suo coinvolgimento nella mafia."
+      }
   ],
   "movies-favorite": [
     {

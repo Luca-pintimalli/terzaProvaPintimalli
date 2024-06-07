@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" >StreamScape</a>
 
 
 
@@ -19,19 +19,29 @@
 
         <div class="collapse navbar-collapse " #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li>
-
+                <li *ngIf="!isLoggedIn" >
                     <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
                 </li>
+
                 <li *ngIf="!isLoggedIn" class="nav-item">
                     <a class="nav-link" routerLink="/auth">Accedi</a>
                 </li>
+
                 <li *ngIf="isLoggedIn" class="nav-item">
                     <a class="nav-link" routerLink="/dashboard">Dashboard</a>
                 </li>
+
+                <li *ngIf="isLoggedIn" class="nav-item">
+                    <a class="nav-link" routerLink="/movies">Utenti registrati</a>
+                </li>
+
                 <li *ngIf="isLoggedIn" class="nav-item">
                     <a class="nav-link" routerLink="/movies">Movies</a>
                 </li>
+                <li *ngIf="isLoggedIn" class="nav-item">
+                    <a class="nav-link" routerLink="/movies">Favorite Movies</a>
+                </li>
+
                 <li *ngIf="isLoggedIn" class="nav-item">
                     <button class="nav-link" (click)="logout()">Logout</button>
                 </li>
